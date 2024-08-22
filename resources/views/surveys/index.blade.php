@@ -24,7 +24,7 @@
                     @foreach($surveys as $survey)
                         <tr>
                             <td>
-                                <a href="{{ route('surveys.show', $survey) }}" class="text-decoration-none">{{ $survey->name }}</a>
+                                <span class="text-decoration-none">{{ $survey->name }}</span>
                             </td>
                             <td>
                                 <a href="{{ route('surveys.edit', $survey) }}" class="btn btn-warning btn-sm">Edit</a>&nbsp;
