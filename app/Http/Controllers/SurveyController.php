@@ -158,7 +158,6 @@ class SurveyController extends Controller
     public function report(Survey $survey)
     {
         $questions = $survey->questions()->with('answers')->get();
-
         $reportData = [];
 
         foreach ($questions as $question) {
